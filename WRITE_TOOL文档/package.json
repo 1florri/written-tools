@@ -1,0 +1,12 @@
+{
+  "name": "desktop-draft-widget",
+  "version": "1.0.0",
+  "description": "Desktop draft widget with brush mode, clear, pin and save",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^37.2.0"
+  }
+}

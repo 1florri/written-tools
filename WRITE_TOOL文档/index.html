@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>桌面草稿小组件</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="draftCanvas"></canvas>
+
+    <div class="toolbar no-drag" id="toolbar">
+      <div class="brush-group">
+        <button class="brush" data-color="#000000" data-key="black" type="button" aria-label="黑色"></button>
+        <button class="brush" data-color="#f43f5e" data-key="red" type="button" aria-label="红色"></button>
+        <button class="brush" data-color="#3b82f6" data-key="blue" type="button" aria-label="蓝色"></button>
+        <button class="brush" data-color="#22c55e" data-key="green" type="button" aria-label="绿色"></button>
+        <button id="eraserBtn" class="eraser" type="button" aria-label="橡皮擦">擦</button>
+      </div>
+      <div class="tool-group">
+        <div class="size-group">
+          <button class="size-btn active" data-size="1" type="button">1</button>
+          <button class="size-btn" data-size="2" type="button">2</button>
+          <button class="size-btn" data-size="3" type="button">3</button>
+        </div>
+        <button id="clearBtn" class="btn btn-clear" type="button">清空</button>
+        <button id="undoBtn" class="btn btn-undo" type="button">撤销</button>
+        <button id="redoBtn" class="btn btn-undo" type="button">重做</button>
+        <button id="closeBtn" class="btn btn-close" type="button" aria-label="退出">×</button>
+      </div>
+    </div>
+    <div id="toast" class="toast">保存成功</div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
